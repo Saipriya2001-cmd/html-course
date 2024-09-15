@@ -1,0 +1,360 @@
+/* Header and Navigation Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    animation: fadeIn 3s ease-in-out;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+/* Project Section Styles */
+.project {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    margin-bottom: 1rem;
+}
+
+.project a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Additional styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Skills Section Styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.skill {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.skill-bar {
+    background: #e0e0e0;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.skill-progress {
+    height: 100%;
+    width: 0;
+    transition: width 0.6s ease;
+}
+
+.html {
+    background: #e34c26; /* HTML color */
+    width: 100%; /* Adjust percentage as needed */
+}
+
+.css {
+    background: #264de4; /* CSS color */
+    width: 100%; /* Adjust percentage as needed */
+}
+
+.python {
+    background: #306998; /* Python color */
+    width: 100%; /* Adjust percentage as needed */
+}
+
+.dancing {
+    background: #ff6f61; /* Custom color */
+    width: 100%; /* Adjust percentage as needed */
+}
+
+.traveling {
+    background: #3b5998; /* Custom color */
+    width: 100%; /* Adjust percentage as needed */
+}
+
+section {
+    padding: 2rem 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+ul li:hover {
+    transform: scale(1.05);
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 1rem auto;
+    border: 5px solid #007BFF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Contact Section Styles */
+#contact {
+    background: #f9f9f9;
+    padding: 2rem 0;
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#contact p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    position: relative;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0077b5; /* LinkedIn blue */
+    transform: scale(1.1);
+}
+
+.social-links a:hover img {
+    transform: rotate(360deg);
+}
+
+/* LinkedIn Icon Style (optional, if you want to use a FontAwesome icon instead of an image) */
+.social-links .linkedin-link::before {
+    content: '\f08c'; /* FontAwesome LinkedIn icon */
+    font-family: FontAwesome;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    color: #fff;
+}
+
+.social-links a:hover::before {
+    color: #0077b5;
+}
+
